@@ -27,7 +27,7 @@
                     <a class="hover:text-gray-500" href="index.html">Início</a>
                 </li>
                 <li>
-                    <a class="hover:text-gray-500" href="cardapio.html">Cardápio</a>
+                    <a class="hover:text-gray-500" href="#">Cardápio</a>
                 </li>
                 <li>
                     <a class="hover:text-gray-500" href="#">Quem Somos</a>
@@ -38,21 +38,30 @@
             </ul>
         </div>
         <div class="flex items-center gap-6">
-            <button class="mt-2 mb-1 bg-[#a6c1ee] text-white px-5 py-2 rounded-full hover:bg-[#87acec]">Login</button>
-            <button class="mt-2 mb-1 bg-[#a6c1ee] text-white px-5 py-2 rounded-full hover:bg-[#87acec]">Cadastrar</button>
+            <button class="bg-[#a6c1ee] text-white px-5 py-2 rounded-full hover:bg-[#87acec]">Login</button>
+            <button class="bg-[#a6c1ee] text-white px-5 py-2 rounded-full hover:bg-[#87acec]">Cadastrar</button>
             <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
         </div>
 </header>
-<hr> 
-<body class="font-[Poppins] bg-gradient-to-r from-sky-500 to-indigo-500  h-screen">
+
+<hr>
 
 
-    <div class="initial-content-container">
-        <div class="initial-content bg-[#a6c1ee] text-white px-5 py-2 rounded-full hover:bg-[#87acec] cursor-default">
-            <h1><strong>Faça suas refeições com a Dev_Food!</strong></h1>
-            <span>São milhares de opções com um só clique.</span>
-        </div>
+<hr>
+
+<body class="font-[Poppins] bg-gradient-to-r from-sky-500 to-indigo-500 h-screen">
+
+    <div class="mt-14 ml-14 grid grid-cols-4 gap-4">
+        <div><img class="w-45 cursor-pointer md:hover:blur-sm" src="assets/sushi.jpg" alt="..."></div>
+        <div><img class="w-45 cursor-pointer md:hover:blur-sm" src="assets/spaghetti.jpeg" alt="..."></div>
+        <div><img class="w-45 cursor-pointer" src="" alt="..."></div>
     </div>
+
+<!-- <div class="">
+    <img class="float-left w-60" src="assets/sushi.jpg">
+    <p>Sushi Dev_Special</p>
+    <span>Um sushi que combina tradição e modernidade em um único sabor irresistível. Feito com arroz temperado, envolto em nori crocante e recheado com salmão fresco, cream cheese cremoso e um toque de cebolinha. Finalizado com uma camada generosa de abacate fatiado e um toque de molho tarê artesanal, é uma explosão de sabores que derrete na boca. Perfeito para quem busca uma experiência sofisticada e única!</span>
+</div> -->
 
 
     <script>
