@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+
+</head>
+
+<body class="font-[Poppins] bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee] h-screen">
+    <header class="bg-white">
+        <nav class="flex justify-between items-center w-[92%] mx-auto">
+            <div>
+                <img class="w-14" src="assets/desenvolvedor.png" alt="...">
+            </div>
+
+            <!-- LINKS DA NAVBAR -->
+            <div class="nav-links md:static absolute bg-white md:min-h- min-h-fit [60vh] left-0 md:top-[9%] top-[-100%] md:w-auto w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li>
+                        <a class="hover:text-gray-500" href="">Início</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="">Cardápios</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="">Quem Somos</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!-- BOTÃO DE LOGIN E TOGGLE MENU -->
+            <div class="flex items-center gap-6">
+                <button class="bg-[#a6c1ee] text-white px-5 py-2 rounded-full hover:bg-[#87acec]">Login</button>
+                <ion-icon onclick="onToggleMenu(this)" name="menu-outline" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+                <!-- TÁ DANDO ERRO NA HORA DE CLICAR E APARECER O MENU - VERSÃO MOBILE -->
+            </div>
+        </nav>
+    </header>
+</body>
+
+</html>
