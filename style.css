@@ -27,3 +27,31 @@ h1 h2 p {
     align-items: center;
     justify-content: center;
 }
+
+/* Página: Quem somos */
+#container-quem-somos {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(238, 238, 238, 0.89);
+    border-radius: 10px;
+    height: auto;
+    width: auto;
+    gap: 10px;
+}
+
+#desenvolvedores {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+
+}
+
+#person-1, #person-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
