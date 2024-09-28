@@ -1,3 +1,3 @@
 function login() {
-    const username = document.getElementById
+    const username = document.getElementById(login)
 }

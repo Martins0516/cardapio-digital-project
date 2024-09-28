@@ -19,7 +19,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 </head>
-<header class="bg-white">
+<header class="bg-white sticky top-0">
     <nav class="flex justify-between items-center w-[92%]  mx-auto">
         <div class="flex justify-between items-center gap-4">
             <img class="w-12 cursor-pointer" src="assets/desenvolvedor.png" alt="...">
@@ -41,70 +41,228 @@
                         href="quemsomos.html">Quem Somos</a>
                 </li>
                 <li>
-                    <a class="hover:text-gray-500 hover:text-sky-500 hover:border-b-2 hover:border-sky-500" href="#">FAQ</a>
+                    <a class="hover:text-gray-500 hover:text-sky-500 hover:border-b-2 hover:border-sky-500"
+                        href="faq.html">FAQ</a>
                 </li>
             </ul>
         </div>
         <div class="flex items-center gap-6">
             <button onclick="login()"
-                class="mt-2 mb-1 bg-[#a6c1ee] text-white px-5 py-2 rounded-full hover:bg-[#87acec]"><a href="tela_login.html">Login</a></button>
-            <button
-                class="mt-2 mb-1 bg-[#a6c1ee] text-white px-5 py-2 rounded-full hover:bg-[#87acec]"><a href="">Cadastrar</a></button>
+                class="mt-2 mb-1 bg-[#a6c1ee] text-white px-5 py-2 rounded-full hover:bg-[#87acec]"><a
+                    href="tela_login.html">Login</a></button>
+            <button class="mt-2 mb-1 bg-[#a6c1ee] text-white px-5 py-2 rounded-full hover:bg-[#87acec]"><a
+                    href="">Cadastrar</a></button>
             <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
         </div>
 </header>
 <hr>
 
-<body class="font-[Poppins] bg-gradient-to-r from-sky-500 to-indigo-500 h-screen">
+<body class="font-[Poppins] h-screen bg-white">
 
     <div class="flex items-center justify-center mt-6 font-medium">
-        <h1>Pratos Saudáveis</h1>
+        <h1 class="border-b-2 border-black">Pratos Saudáveis</h1>
     </div>
+
     <section class="md:mt-6 md:ml-14 md:mr-14 md:grid grid-cols-4 md:gap-4">
-        <div class="card" style="width: 18rem;">
-            <a href=""><img src="assets/salada-detox.jpg" class="card-img-top" alt="...">
-                <div class="card-body"></a>
-                <h5 class="card-title">Salada_Dev</h5>
-                <p class="card-text">Mix de folhas, frango grelhado, abacate, tomates cereja, ovos de codorna e chia,
+
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="rounded-t-lg" src="assets/salada-detox.jpg" alt="" />
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-black dark:text-white">Salada_Dev</h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Mix de folhas, frango grelhado, abacate,
+                    tomates cereja, ovos de codorna e chia,
                     temperada com azeite e limão.</p>
+                <a href="#"
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Adicionar ao carrinho
+                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    </svg>
+                </a>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
-            <a href=""><img class="h-60" src="assets/omelete-espinafre.jpeg" class="card-img-top" alt="...">
-                <div class="card-body"></a>
-                <h5 class="card-title">Omelete_Espinafre_Queijo</h5>
-                <p class="card-text">Leve, proteico e saboroso: ovos batidos, espinafre fresco e queijo cottage cremoso, ideal para uma refeição saudável, nutritiva e prática!</p>
+        </div>
+
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="rounded-t-lg" src="assets/omelete-espinafre.jpeg" alt="" />
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-black dark:text-white">Omelete_Dev</h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Leve, proteico e saboroso: ovos batidos,
+                    espinafre fresco e queijo cottage cremoso, ideal para uma refeição saudável, nutritiva e prática!
+                </p>
+                <a href="#"
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Adicionar ao carrinho
+                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    </svg>
+                </a>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
-            <a href=""><img class="h-60" src="assets/bowl-frango-quinoa-abacate.jpg" class="card-img-top" alt="...">
-                <div class="card-body"></a>
-                <h5 class="card-title">Bowl_Frango_Abacate</h5>
-                <p class="card-text">Uma refeição completa e equilibrada: peito de frango grelhado, quinoa rica em proteínas, abacate cremoso e legumes frescos.</p>
+        </div>
+
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="rounded-t-lg" src="assets/bowl-frango-quinoa-abacate.jpg" alt="" />
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-black dark:text-white">Bowl_Dev</h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Uma refeição completa e equilibrada: peito
+                    de frango grelhado, quinoa rica em proteínas, abacate cremoso e legumes frescos.
+                </p>
+                <a href="#"
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Adicionar ao carrinho
+                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    </svg>
+                </a>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
-            <a href=""><img class="h-60" src="assets/file-de-tilapia-grelhado-com-legumes-no-vapor.jpg" class="card-img-top" alt="...">
-                <div class="card-body"></a>
-                <h5 class="card-title">Filé_Tilápia_Com_Legumes</h5>
-                <p class="card-text">Delicioso e leve: filé de tilápia grelhado, acompanhado de legumes ao vapor frescos, proporcionando uma refeição saudável e cheia de sabor!</p>
+
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="rounded-t-lg" src="assets/file-de-tilapia-grelhado-com-legumes-no-vapor.jpg" alt="" />
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-black dark:text-white">Tilápia_Dev</h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Delicioso e leve: filé de tilápia grelhado,
+                    acompanhado de legumes ao vapor frescos, proporcionando uma refeição saudável e cheia de sabor!
+                </p>
+                <a href="#"
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Adicionar ao carrinho
+                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    </svg>
+                </a>
             </div>
         </div>
     </section>
     <hr class="mt-10">
-
     <div class="flex items-center justify-center mt-6 font-medium">
-        <h1>Pratos Gourmet</h1>
+        <h1 class="border-b-2 border-black">Pratos Gourmet</h1>
     </div>
     <section class="md:mt-6 md:ml-14 md:mr-14 md:grid grid-cols-4 md:gap-4 md:mb-20">
-        <div><a href=""><img class="cursor-pointer md:hover:blur-sm border-sky-500 drop-shadow-2xl"
-                    src="assets/salada-detox.jpg" alt="..."></a></div>
-        <div><a href=""><img class="cursor-pointer md:hover:blur-sm border-sky-500 drop-shadow-2xl"
-                    src="assets/salada-detox.jpg" alt="..."></a></div>
-        <div><a href=""><img class="cursor-pointer md:hover:blur-sm border-sky-500 drop-shadow-2xl"
-                    src="assets/salada-detox.jpg" alt="..."></a></div>
-        <div><a href=""><img class="cursor-pointer md:hover:blur-sm border-sky-500 drop-shadow-2xl"
-                    src="assets/salada-detox.jpg" alt="..."></a></div>
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="rounded-t-lg" src="assets/salmao-grelhado.jpg" alt="" />
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-black dark:text-white">Salmão_Dev</h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Sabor refinado e nutritivo: salmão grelhado com uma crosta aromática de ervas frescas, servido com legumes.</p>
+                <a href="#"
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Adicionar ao carrinho
+                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+
+
+
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="rounded-t-lg" src="assets/risoto-camarao.jpg" alt="" />
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-black dark:text-white">Risoto_Dev</h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Cremoso e delicioso: risoto de arroz arbóreo com camarões suculentos, temperado com ervas finas e um toque de parmesão.</p>
+                <a href="#"
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Read more
+                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
+                        technology acquisitions 2021</h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
+                    acquisitions of 2021 so far, in reverse chronological order.</p>
+                <a href="#"
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Read more
+                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+
+
+
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
+                        technology acquisitions 2021</h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
+                    acquisitions of 2021 so far, in reverse chronological order.</p>
+                <a href="#"
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Read more
+                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+
     </section>
 
 
@@ -118,7 +276,7 @@
     </script>
 </body>
 
-<footer class="shadow dark:bg-gray-900 pb-7">
+<footer class="shadow dark:bg-gray-900">
     <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div class="sm:flex sm:items-center sm:justify-between">
             <a href="index.html" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
@@ -141,7 +299,12 @@
             </ul>
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="index.html" class="hover:underline">Dev_Food™</a>. All Rights Reserved.</span>
+        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
+            <p>
+            © 2023 
+            <a href="index.html"class="hover:underline">Dev_Food™</a>. All Rights Reserved.
+        </p>
+        </span>
     </div>
 </footer>
 
