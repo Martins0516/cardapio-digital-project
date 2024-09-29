@@ -35,13 +35,13 @@ h1 h2 p {
 
 /* Página: Quem somos */
 #container-quem-somos {
-    margin: 20px;
+    /* margin: 20px; */
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(203 213 225);
-    border-radius: 10px;
+    /* background-color: rgb(203 213 225); */
+    /* border-radius: 10px; */
     height: auto;
     width: auto;
     gap: 10px;

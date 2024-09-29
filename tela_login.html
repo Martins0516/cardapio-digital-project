@@ -1,5 +1,6 @@
 <!doctype html>
-<html>
+<html class="h-full">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,37 +14,87 @@
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<header class="bg-white">
+<header class="shadow dark:bg-gray-900 text-white">
     <nav class="flex justify-between items-center w-[92%]  mx-auto">
         <div class="flex justify-between items-center gap-4">
             <img class="w-12 cursor-pointer" src="assets/desenvolvedor.png" alt="...">
             <h1 class="cursor-pointer">Dev_Food</h1>
         </div>
         <div
-            class="nav-links duration-500 md:static text-black absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+            class="nav-links duration-500 md:static text-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
             <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
                 <li>
-                    <a class="hover:text-gray-500 hover:text-sky-500 hover:border-b-2 hover:border-sky-500" href="index.html">Início</a>
+                    <a class="hover:text-gray-500 hover:text-sky-500 hover:border-b-2 hover:border-sky-500"
+                        href="index.html">Início</a>
                 </li>
                 <li>
-                    <a class="hover:text-gray-500 hover:text-sky-500 hover:border-b-2 hover:border-sky-500" href="cardapio.html">Cardápio</a>
+                    <a class="hover:text-gray-500 hover:text-sky-500 hover:border-b-2 hover:border-sky-500"
+                        href="cardapio.html">Cardápio</a>
                 </li>
                 <li>
-                    <a class="hover:text-gray-500 hover:text-sky-500 hover:border-b-2 hover:border-sky-500" href="quemsomos.html">Quem Somos</a>
+                    <a class="hover:text-gray-500 hover:text-sky-500 hover:border-b-2 hover:border-sky-500"
+                        href="quemsomos.html">Quem Somos</a>
                 </li>
                 <li>
-                    <a class="hover:text-gray-500 hover:text-sky-500 hover:border-b-2 hover:border-sky-500" href="faq.html">FAQ</a>
+                    <a class="hover:text-gray-500 hover:text-sky-500 hover:border-b-2 hover:border-sky-500"
+                        href="faq.html">FAQ</a>
                 </li>
             </ul>
         </div>
         <div class="flex items-center gap-6">
-            <button onclick="login()" class="mt-2 mb-1 bg-[#a6c1ee] text-white px-5 py-2 rounded-full hover:bg-sky-500">Login</button>
-            <button class="mt-2 mb-1 bg-[#a6c1ee] text-white px-5 py-2 rounded-full hover:bg-sky-500">Cadastrar</button>
+            <button onclick="login()"
+                class="mt-2 mb-1 bg-indigo-600 text-white px-5 py-2 rounded-full hover:bg-sky-500">Login</button>
+            <button class="mt-2 mb-1 bg-indigo-600 text-white px-5 py-2 rounded-full hover:bg-sky-500">Cadastrar</button>
             <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
         </div>
 </header>
-<body class="font-[Poppins] bg-gradient-to-r from-sky-500 to-indigo-500 border-b-2 h-screen ">
-    <div class="flex justify-center content-center my-6">
+
+<body class="font-[Poppins] bg-white h-screen">
+    <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+        <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+            <img class="mx-auto h-10 w-auto" src="assets/desenvolvedor.png"
+                alt="Your Company">
+            <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Faça login na sua conta</h2>
+        </div>
+
+        <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+            <form class="space-y-6" action="#" method="POST">
+                <div>
+                    <label for="email" class="block text-sm font-medium leading-6 text-gray-900">E-mail</label>
+                    <div class="mt-2">
+                        <input id="email" name="email" type="email" autocomplete="email" required
+                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex items-center justify-between">
+                        <label for="password" class="block text-sm font-medium leading-6 text-gray-900">Senha</label>
+                        <div class="text-sm">
+                            <a href="#" class="font-semibold text-indigo-600 hover:text-indigo-500">Esqueçeu a senha?</a>
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                        <input id="password" name="password" type="password" autocomplete="current-password" required
+                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                    </div>
+                </div>
+
+                <div>
+                    <button type="submit"
+                        class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Login</button>
+                </div>
+            </form>
+
+            <p class="mt-10 text-center text-sm text-gray-500">
+                Não tem cadastro?
+                <a href="cadastrar.html" class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">Clique aqui!</a>
+            </p>
+        </div>
+    </div>
+
+
+    <!-- <div class="flex justify-center content-center my-6">
         <form action="" class="flex flex-col gap-4 bg-slate-300 p-10 rounded-xl">
             <h1 class="border-b-2 border-black text-2xl">Faça seu login</h1>
             <div class="flex flex-col gap-2">
@@ -66,7 +117,7 @@
                 </p> 
             </div>
         </form>
-    </div>
+    </div> -->
 </body>
 <footer class="bg-white shadow dark:bg-gray-900 pb-7">
     <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
@@ -94,11 +145,12 @@
             <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
             <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
                 <p>
-                © 2023 
-                <a href="index.html"class="hover:underline">Dev_Food™</a>. All Rights Reserved.
-            </p>
+                    © 2023
+                    <a href="index.html" class="hover:underline">Dev_Food™</a>. All Rights Reserved.
+                </p>
             </span>
-    </div>
+        </div>
     </div>
 </footer>
+
 </html>
